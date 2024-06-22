@@ -1,6 +1,8 @@
 package com.kacper.usermenagment.entity;
 
 import jakarta.persistence.*;
+import lombok.Getter;
+import lombok.Setter;
 import org.springframework.security.core.GrantedAuthority;
 import org.springframework.security.core.authority.SimpleGrantedAuthority;
 import org.springframework.security.core.userdetails.UserDetails;
@@ -11,6 +13,8 @@ import java.util.List;
 
 @Entity
 @Table(name = "our_users")
+@Getter
+@Setter
 public class OurUsers implements UserDetails
 {
     @Id
